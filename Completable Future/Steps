@@ -1,0 +1,25 @@
+1) Make a instance of CompletableFuture.
+2) Assign a task and write a logic like thread with the help of supplyAsync(It return's a result) functional inteface.
+3) At last return whatever the result you want (The return type of completable future is GENERIC).
+4) Use Other methods as per requirements -
+    1) .thenApply() -
+        1) Used to transform or perform some sort of task on previous output.
+        2) It takes the input and return new input.
+        3) Mostly used when we want to modeify data.
+        4) Return type --> Generic (CompletableFuture<U>).
+
+    2) .thenAccept() -
+        1) Consumes the result and does not return any value.
+        2) Used for Logging/Printing/Saving the results.
+        3) Return type --> void
+
+    3) .thenRun() -
+        1) It is running after completion of CompletableFuture.
+        2) It will not read the result returned by the Completable future.
+        3) Used for non-dependable task on output like sent notification/mail after completing certain task.
+        4) Return type --> void
+
+    4) .thenCompose() -
+        1) Used for dependent async calls.
+        2) Used to flattened nested futures.
+        3) Return type --> Generic (CompletableFuture<U>).
