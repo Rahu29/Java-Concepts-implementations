@@ -1,0 +1,6 @@
+Solution ->
+1) Create object of Reentrant lock and initialize it.
+2) After creating whereever you want to use this lock then use lock.lock() where first lock is variable name and another lock() is method present in reentrant lock.
+3) Inside try block write your logic, in this code we have written logic for money withdrawl.
+4) Don't forget to release lock in finally block otherwise it will be a situatution like deadlock.
+5) END
